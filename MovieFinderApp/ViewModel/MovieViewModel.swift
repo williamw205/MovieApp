@@ -22,6 +22,9 @@ class MovieViewModel: ObservableObject {
             if let data = data {
                 do {
                     let discover = try JSONDecoder().decode(Discover.self, from: data)
+                    DispatchQueue.main.async {
+                        self.movies = discover.results
+                    }
                     self.movies = discover.results
                 } catch (let error) {
                     print(error)

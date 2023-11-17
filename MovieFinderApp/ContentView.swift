@@ -6,31 +6,52 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
+
 
 struct ContentView: View {
     @ObservedObject var viewModel = MovieViewModel()
    
     var body: some View {
+        
+        
         NavigationView {
-            ZStack {
-                if let movies = viewModel.movies {
-                    List {
-                        ForEach(movies) { movie in
-                            Text(movie.title)
-                                .font(.title2)
-                                .fontWeight(.semibold)
+            VStack {
+                Text("Popular Movies")
+                    .foregroundStyle(.white)
+                    .fontWeight(.bold)
+                    .font(.system(size: 23))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    
+                ZStack {
+                    if let movies = viewModel.movies {
+                        ScrollView(.horizontal) {
+                            LazyHStack(spacing: 15) {
+                                ForEach(movies) { movie in
+                                    NavigationLink(destination: MovieInfoView()) {
+                                        WebImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster_path)"))
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 130, height: 200)
+                                            .cornerRadius(8)
+                                            .offset(y: -250)
+                                    }
+                                }
+                            }
+                            .padding(16)
                         }
+                    } else {
+                        Text("Loading info")
                     }
-                    .listStyle(PlainListStyle())
-                } else {
-                    Text("Loading info")
                 }
             }
-            .navigationTitle("Popular Movies")
+            .background(.black.opacity(0.95))
+            .onAppear {
+                viewModel.fetchData()
         }
-        .onAppear {
-            viewModel.fetchData()
         }
+        
     }
 }
 

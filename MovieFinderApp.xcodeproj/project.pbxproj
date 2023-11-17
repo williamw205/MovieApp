@@ -13,6 +13,8 @@
 		3A5536772B06FBF1009E52E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5536762B06FBF1009E52E7 /* Preview Assets.xcassets */; };
 		3A55367F2B06FCD0009E52E7 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55367E2B06FCD0009E52E7 /* MovieViewModel.swift */; };
 		3A5536822B070328009E52E7 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5536812B070328009E52E7 /* Discover.swift */; };
+		3A5536852B072539009E52E7 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5536842B072539009E52E7 /* SDWebImageSwiftUI */; };
+		3A5536872B073983009E52E7 /* MovieInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5536862B073983009E52E7 /* MovieInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,7 @@
 		3A5536762B06FBF1009E52E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A55367E2B06FCD0009E52E7 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		3A5536812B070328009E52E7 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		3A5536862B073983009E52E7 /* MovieInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5536852B072539009E52E7 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				3A5536712B06FBEF009E52E7 /* ContentView.swift */,
 				3A5536732B06FBF1009E52E7 /* Assets.xcassets */,
 				3A5536752B06FBF1009E52E7 /* Preview Content */,
+				3A5536862B073983009E52E7 /* MovieInfoView.swift */,
 			);
 			path = MovieFinderApp;
 			sourceTree = "<group>";
@@ -105,6 +110,9 @@
 			dependencies = (
 			);
 			name = MovieFinderApp;
+			packageProductDependencies = (
+				3A5536842B072539009E52E7 /* SDWebImageSwiftUI */,
+			);
 			productName = MovieFinderApp;
 			productReference = 3A55366C2B06FBEF009E52E7 /* MovieFinderApp.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 3A5536632B06FBEF009E52E7;
+			packageReferences = (
+				3A5536832B072539009E52E7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 3A55366D2B06FBEF009E52E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +174,7 @@
 				3A5536722B06FBEF009E52E7 /* ContentView.swift in Sources */,
 				3A5536702B06FBEF009E52E7 /* MovieFinderAppApp.swift in Sources */,
 				3A55367F2B06FCD0009E52E7 /* MovieViewModel.swift in Sources */,
+				3A5536872B073983009E52E7 /* MovieInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A5536832B072539009E52E7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A5536842B072539009E52E7 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A5536832B072539009E52E7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A5536642B06FBEF009E52E7 /* Project object */;
 }
