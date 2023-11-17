@@ -11,6 +11,8 @@
 		3A5536722B06FBEF009E52E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5536712B06FBEF009E52E7 /* ContentView.swift */; };
 		3A5536742B06FBF1009E52E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5536732B06FBF1009E52E7 /* Assets.xcassets */; };
 		3A5536772B06FBF1009E52E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5536762B06FBF1009E52E7 /* Preview Assets.xcassets */; };
+		3A55367F2B06FCD0009E52E7 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55367E2B06FCD0009E52E7 /* MovieViewModel.swift */; };
+		3A5536822B070328009E52E7 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5536812B070328009E52E7 /* Discover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3A5536712B06FBEF009E52E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A5536732B06FBF1009E52E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5536762B06FBF1009E52E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A55367E2B06FCD0009E52E7 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		3A5536812B070328009E52E7 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		3A55366E2B06FBEF009E52E7 /* MovieFinderApp */ = {
 			isa = PBXGroup;
 			children = (
+				3A5536802B07030D009E52E7 /* Model */,
+				3A55367D2B06FC5F009E52E7 /* ViewModel */,
 				3A55366F2B06FBEF009E52E7 /* MovieFinderAppApp.swift */,
 				3A5536712B06FBEF009E52E7 /* ContentView.swift */,
 				3A5536732B06FBF1009E52E7 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				3A5536762B06FBF1009E52E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A55367D2B06FC5F009E52E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A55367E2B06FCD0009E52E7 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A5536802B07030D009E52E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A5536812B070328009E52E7 /* Discover.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5536822B070328009E52E7 /* Discover.swift in Sources */,
 				3A5536722B06FBEF009E52E7 /* ContentView.swift in Sources */,
 				3A5536702B06FBEF009E52E7 /* MovieFinderAppApp.swift in Sources */,
+				3A55367F2B06FCD0009E52E7 /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

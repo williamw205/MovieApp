@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = MovieViewModel()
+   
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                if let movies = viewModel.movies {
+                    List {
+                        ForEach(movies) { movie in
+                            Text(movie.title)
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                        }
+                    }
+                    .listStyle(PlainListStyle())
+                } else {
+                    Text("Loading info")
+                }
+            }
+            .navigationTitle("Popular Movies")
         }
-        .padding()
+        .onAppear {
+            viewModel.fetchData()
+        }
     }
 }
 
