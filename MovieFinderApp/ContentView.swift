@@ -26,7 +26,7 @@ struct ContentView: View {
                                     .offset(x: 10)
                         
                             if let movies = viewModel.movies {
-                                ScrollView(.horizontal) {
+                                ScrollView(.horizontal, showsIndicators: false) {
                                         LazyHStack(spacing: 15) {
                                             ForEach(movies) { movie in
                                                 NavigationLink(destination: MovieInfoView(movie: movie)) {
@@ -40,7 +40,6 @@ struct ContentView: View {
                                                 }
                                         }
                                     }
-                                .navigationBarHidden(true)
                                 } else {
                                     Text("Fetching data...")
                             }
