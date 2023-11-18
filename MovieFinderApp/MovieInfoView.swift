@@ -12,7 +12,12 @@ struct MovieInfoView: View {
     let movie: Movie
 
     var body: some View {
-        Text(movie.title)
+        VStack {
+            Text("Hi")
+                .foregroundStyle(.white)
+        }
+        
+        
     }
 }
 
