@@ -23,34 +23,30 @@ struct MovieInfoView: View {
                     .resizable()
                     .interpolation(.high)
                     .aspectRatio(contentMode: .fit)
-                    .cornerRadius(8)
-                    .frame(height: 590)
+                    //.cornerRadius(8)
+                    .frame(height: 400)
                     .offset(x: 0, y: -170)
                 
                /* Rectangle()
                     .fill(Color("bkColor").opacity(0.4))
                     .offset(y: -300)*/
                 
+                
                 Rectangle()
-                    .fill(LinearGradient(
-                            gradient: Gradient(stops: [
-                                .init(color: Color("bkColor"), location: 0.0),
-                                .init(color: Color("bkColor").opacity(0.94), location: 0.05),
-                                .init(color: Color("bkColor").opacity(1), location: 0.1),
-                                .init(color: Color("bkColor"), location: 1.0)
-                            ]),
-                            startPoint: .top,
-                            endPoint: .bottom
-                    ))
-                    .frame(width: 500, height: 560)
+                    .fill(Color("bkColor"))
+                    .aspectRatio(contentMode: .fit)
+                    //.frame(width: 500, height: 560)
                     .offset(y: 190)
                     .blur(radius: 10)
+                
+        
                     
             }
             
             Text(movie.title)
                 .foregroundStyle(.white)
-                .fontWeight(.bold)
+                .font(.custom("Axiforma-Bold", size: 20))
+                .offset(y: -350)
         }
         
         
@@ -58,7 +54,7 @@ struct MovieInfoView: View {
 }
 
 #Preview {
-    MovieInfoView(movie: Movie(id: 76600, title: "Avatar: The Way of Water", overview: "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.", posterPath: "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg", voteAverage: 7.7), viewModel: MovieViewModel())
+    MovieInfoView(movie: Movie(id: 76600, title: "Avatar: The Way of Water", overview: "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.", posterPath: "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg", voteAverage: 7.7), viewModel: MovieViewModel())
        
 }
 

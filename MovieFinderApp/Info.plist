@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Axiforma-Black.ttf</string>
+		<string>Axiforma-Bold.ttf</string>
+		<string>Axiforma-Book.ttf</string>
+		<string>Axiforma-ExtraBold.ttf</string>
+		<string>Axiforma-Heavy.ttf</string>
+		<string>Axiforma-Light.ttf</string>
+		<string>Axiforma-Medium.ttf</string>
+		<string>Axiforma-Regular.ttf</string>
+		<string>Axiforma-SemiBold.ttf</string>
+		<string>Axiforma-Thin.ttf</string>
+	</array>
+</dict>
+</plist>

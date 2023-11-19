@@ -15,6 +15,16 @@
 		3A5536822B070328009E52E7 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5536812B070328009E52E7 /* Discover.swift */; };
 		3A5536852B072539009E52E7 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5536842B072539009E52E7 /* SDWebImageSwiftUI */; };
 		3A5536872B073983009E52E7 /* MovieInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5536862B073983009E52E7 /* MovieInfoView.swift */; };
+		3AA1FD512B09E1E20070A536 /* Axiforma-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD3D2B09E1E10070A536 /* Axiforma-Light.ttf */; };
+		3AA1FD522B09E1E20070A536 /* Axiforma-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD3E2B09E1E10070A536 /* Axiforma-ExtraBold.ttf */; };
+		3AA1FD532B09E1E20070A536 /* Axiforma-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD3F2B09E1E10070A536 /* Axiforma-Heavy.ttf */; };
+		3AA1FD592B09E1E20070A536 /* Axiforma-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD452B09E1E10070A536 /* Axiforma-Book.ttf */; };
+		3AA1FD5A2B09E1E20070A536 /* Axiforma-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD462B09E1E10070A536 /* Axiforma-Regular.ttf */; };
+		3AA1FD5F2B09E1E20070A536 /* Axiforma-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD4B2B09E1E20070A536 /* Axiforma-SemiBold.ttf */; };
+		3AA1FD612B09E1E20070A536 /* Axiforma-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD4D2B09E1E20070A536 /* Axiforma-Thin.ttf */; };
+		3AA1FD632B09E1E20070A536 /* Axiforma-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD4F2B09E1E20070A536 /* Axiforma-Medium.ttf */; };
+		3AA1FD642B09E1E20070A536 /* Axiforma-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD502B09E1E20070A536 /* Axiforma-Bold.ttf */; };
+		3AA1FD692B09E4C50070A536 /* Axiforma-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FD682B09E4C50070A536 /* Axiforma-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,17 @@
 		3A55367E2B06FCD0009E52E7 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		3A5536812B070328009E52E7 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		3A5536862B073983009E52E7 /* MovieInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoView.swift; sourceTree = "<group>"; };
+		3AA1FD3D2B09E1E10070A536 /* Axiforma-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Light.ttf"; sourceTree = "<group>"; };
+		3AA1FD3E2B09E1E10070A536 /* Axiforma-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3AA1FD3F2B09E1E10070A536 /* Axiforma-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Heavy.ttf"; sourceTree = "<group>"; };
+		3AA1FD452B09E1E10070A536 /* Axiforma-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Book.ttf"; sourceTree = "<group>"; };
+		3AA1FD462B09E1E10070A536 /* Axiforma-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Regular.ttf"; sourceTree = "<group>"; };
+		3AA1FD4B2B09E1E20070A536 /* Axiforma-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-SemiBold.ttf"; sourceTree = "<group>"; };
+		3AA1FD4D2B09E1E20070A536 /* Axiforma-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Thin.ttf"; sourceTree = "<group>"; };
+		3AA1FD4F2B09E1E20070A536 /* Axiforma-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Medium.ttf"; sourceTree = "<group>"; };
+		3AA1FD502B09E1E20070A536 /* Axiforma-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Bold.ttf"; sourceTree = "<group>"; };
+		3AA1FD652B09E3F10070A536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3AA1FD682B09E4C50070A536 /* Axiforma-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Axiforma-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +80,8 @@
 		3A55366E2B06FBEF009E52E7 /* MovieFinderApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AA1FD652B09E3F10070A536 /* Info.plist */,
+				3AA1FD2A2B09DFFC0070A536 /* Fonts */,
 				3A5536802B07030D009E52E7 /* Model */,
 				3A55367D2B06FC5F009E52E7 /* ViewModel */,
 				3A55366F2B06FBEF009E52E7 /* MovieFinderAppApp.swift */,
@@ -92,6 +115,23 @@
 				3A5536812B070328009E52E7 /* Discover.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3AA1FD2A2B09DFFC0070A536 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3AA1FD682B09E4C50070A536 /* Axiforma-Black.ttf */,
+				3AA1FD502B09E1E20070A536 /* Axiforma-Bold.ttf */,
+				3AA1FD452B09E1E10070A536 /* Axiforma-Book.ttf */,
+				3AA1FD3E2B09E1E10070A536 /* Axiforma-ExtraBold.ttf */,
+				3AA1FD3F2B09E1E10070A536 /* Axiforma-Heavy.ttf */,
+				3AA1FD3D2B09E1E10070A536 /* Axiforma-Light.ttf */,
+				3AA1FD4F2B09E1E20070A536 /* Axiforma-Medium.ttf */,
+				3AA1FD462B09E1E10070A536 /* Axiforma-Regular.ttf */,
+				3AA1FD4B2B09E1E20070A536 /* Axiforma-SemiBold.ttf */,
+				3AA1FD4D2B09E1E20070A536 /* Axiforma-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +198,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA1FD5F2B09E1E20070A536 /* Axiforma-SemiBold.ttf in Resources */,
+				3AA1FD612B09E1E20070A536 /* Axiforma-Thin.ttf in Resources */,
+				3AA1FD532B09E1E20070A536 /* Axiforma-Heavy.ttf in Resources */,
+				3AA1FD692B09E4C50070A536 /* Axiforma-Black.ttf in Resources */,
+				3AA1FD592B09E1E20070A536 /* Axiforma-Book.ttf in Resources */,
 				3A5536772B06FBF1009E52E7 /* Preview Assets.xcassets in Resources */,
+				3AA1FD512B09E1E20070A536 /* Axiforma-Light.ttf in Resources */,
+				3AA1FD5A2B09E1E20070A536 /* Axiforma-Regular.ttf in Resources */,
 				3A5536742B06FBF1009E52E7 /* Assets.xcassets in Resources */,
+				3AA1FD522B09E1E20070A536 /* Axiforma-ExtraBold.ttf in Resources */,
+				3AA1FD642B09E1E20070A536 /* Axiforma-Bold.ttf in Resources */,
+				3AA1FD632B09E1E20070A536 /* Axiforma-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +360,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieFinderApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieFinderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -338,6 +389,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieFinderApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieFinderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
