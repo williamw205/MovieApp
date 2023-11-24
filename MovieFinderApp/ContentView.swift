@@ -18,24 +18,24 @@ struct ContentView: View {
         
         NavigationView {
             ScrollView {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 30) {
                             Text("Popular Movies")
                                     .foregroundStyle(.white)
-                                    .fontWeight(.bold)
+                                    .font(Font.custom("Axiforma-Bold", size: 23))
                                     .font(.system(size: 23))
                                     .offset(x: 10)
                         
                             if let movies = viewModel.movies {
                                 ScrollView(.horizontal, showsIndicators: false) {
-                                        LazyHStack(spacing: 15) {
+                                        LazyHStack(spacing: 16) {
                                             ForEach(movies) { movie in
                                                 NavigationLink(destination: MovieInfoView(movie: movie)) {
                                                         WebImage(url: URL(string: "https://image.tmdb.org/t/p/w500/\(movie.posterPath)"))
                                                             .resizable()
                                                             .aspectRatio(contentMode: .fill)
-                                                            .frame(width: 120, height: 180)
-                                                            .cornerRadius(8)
-                                                            .offset(x: 10, y: 10)
+                                                            .frame(width: 160)
+                                                            .cornerRadius(16)
+                                                            .offset(x: 10)
                                                     }
                                                 }
                                         }
