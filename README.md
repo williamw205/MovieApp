@@ -12,4 +12,4 @@ The Movie Finder App is a Swift-based application that allows users to discover 
 ## Installation
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/movie-finder-app.git
+   git clone https://github.com/williamw205/movie-finder-app.git
